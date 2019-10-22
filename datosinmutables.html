@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Estructura de datos inmutables</title>
+</head>
+<body>
+<script type="text/javascript">
+	const joel ={
+		nombre:'Joel',
+		apellido:'Perez',
+		edad:22
+	}
+	// funcion que recube a una persona 
+	//const cumple =persona=> persona.edad++
+	//cumple(joel)
+	// de esta manera la edad cada vez que se llama se modificara 
+const cumpleInmutable =persona=>({
+	...persona,
+	edad = persona.edad + 1
+	// se cra un nuevo objeto en memoria
+})
+
+</script>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+	<meta charset="utf-8">
+	<title>Calcular dias</title>
+</head>
+<body>
+	<script type="text/javascript">
+		function diasEntreFechas (fecha1, fecha2){
+			const unDia= 1000*60*60*24 // cuantos milisegundos hay en un dia
+			const dif= Math.abs(fecha1 - fecha2) // es el valor en positivo, se puede hacer resta entre fehas
+			return Math.floor(dif/unDia) // la diferencia entre milisgundos entre los milosegundos que tiene un dia para sacar los dias, math,floor para redondear
+
+		}
+		const hoy= new Date()
+		const nacimiento =new Date(1994,0,15) 
+		// da como resultaod los dias que tengp
+
+	</script>
+
+</body>
+</html>
